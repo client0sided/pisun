@@ -1,0 +1,45 @@
+body {
+    font-family: Sans-Serif;
+    padding: 20px;
+    background: rgb(7, 7, 7);  /* dark background like shadcn dark mode */
+    color: #e0e0e0;            /* light text for contrast */
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+    font-family: Sans-Serif;
+    font-size: 16px;
+    border: 1px solid #444;       /* darker border for dark mode */
+    border-radius: 5px;
+    padding: 10px;
+    background: #111;             /* dark input background */
+    color: #e0e0e0;              /* light text */
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #4CAF50;          /* keep the accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+pre {
+    background: #111;              /* dark background for output */
+    color: #e0e0e0;               /* light text */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;       /* darker border for dark mode */
+    min-height: 100px;
+    overflow-x: auto;
+    white-space: pre-wrap;        /* wrap long lines */
+}
