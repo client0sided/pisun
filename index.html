@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisun Interpreter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pisun Interpreter</h1>
+        
+        <textarea id="inputText" placeholder="Type your code here..."></textarea>
+        
+        <button id="processButton">Run Code</button>
+        
+        <h2>Output</h2>
+        <pre id="outputText">Your output will appear here...</pre>
+    </div>
+
+    <script src="pisun2.js"></script>
+    <script>
+        const button = document.getElementById('processButton');
+        const textarea = document.getElementById('inputText');
+        const output = document.getElementById('outputText');
+
+        button.addEventListener('click', () => {
+            const code = textarea.value;
+            const result = PisunInterpreter.run(code);
+            output.textContent = result;
+        });
+    </script>
+</body>
+</html>
